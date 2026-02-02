@@ -7,14 +7,14 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/caddickzac/Plex-Music-Organizer/issues</Support>
+  <Support>https://forums.unraid.net/topic/196939-support-plex-music-library-organizer/</Support>
   <Project>https://github.com/caddickzac/Plex-Music-Organizer</Project>
   <Overview>
     Organize, automate, and curate your Plex Music library. Features include Metadata Export, Bulk Editing, and a Sonic Playlist Creator.
   </Overview>
   <Category>MediaApp:Music</Category>
   <WebUI>http://[IP]:[PORT:8501]</WebUI>
-  <Icon>https://raw.githubusercontent.com/caddickzac/Plex-Music-Organizer/main/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/caddickzac/unraid-templates/main/icon.png</Icon>
   <Config Name="WebUI Port" Target="8501" Default="8501" Mode="tcp" Description="Port for the Streamlit Web Interface" Type="Port" Display="always" Required="true" Mask="false">8501</Config>
   <Config Name="Exports Path" Target="/app/Exports" Default="/mnt/user/appdata/plex-music-organizer/exports" Mode="rw" Description="Map this to a folder on your Unraid array to save CSV exports." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plex-music-organizer/exports</Config>
   <Config Name="Playlist Presets Path" Target="/app/Playlist_Presets" Default="/mnt/user/appdata/plex-music-organizer/presets" Mode="rw" Description="Map this to save your Playlist Creator presets." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plex-music-organizer/presets</Config>
