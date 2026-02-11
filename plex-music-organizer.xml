@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Name>Plex Music Library Organizer</Name>
-  <Repository>zcaddick/plex-music-organizer</Repository>
-  <Registry>https://hub.docker.com/r/zcaddick/plex-music-organizer</Registry>
+  <Name>Music Manager for Plex</Name>
+  <Repository>zcaddick/music-manager-for-plex</Repository>
+  <Registry>https://hub.docker.com/r/zcaddick/music-manager-for-plex</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/196939-support-plex-music-library-organizer/</Support>
-  <Project>https://github.com/caddickzac/Plex-Music-Organizer</Project>
+  <Project>https://github.com/caddickzac/music-manager-for-plex</Project>
   <Overview>
     Organize, automate, and curate your Plex Music library. Features include Metadata Export, Bulk Editing, and a Sonic Playlist Creator.
   </Overview>
