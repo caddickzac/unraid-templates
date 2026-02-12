@@ -10,14 +10,21 @@
   <Support>https://forums.unraid.net/topic/197142-support-music-manager-for-plex/</Support>
   <Project>https://github.com/caddickzac/Music-Manager-for-Plex</Project>
   <Overview>
-    Organize, automate, and curate your Plex Music library. Features include Metadata Export, Bulk Editing, and a Sonic Playlist Creator.
+    Organize, automate, and curate your Plex Music library. 
+    Features include Sonic Playlist Creator (BPM/Energy), Metadata Export, Bulk Editing, and advanced Library analysis.
   </Overview>
   <Category>Tools:MediaApp:Music</Category>
   <WebUI>http://[IP]:[PORT:8501]</WebUI>
   <Icon>https://raw.githubusercontent.com/caddickzac/Music-Manager-for-Plex/main/icon.png</Icon>
+  
   <Config Name="WebUI Port" Target="8501" Default="8501" Mode="tcp" Description="Port for the Streamlit Web Interface" Type="Port" Display="always" Required="true" Mask="false">8501</Config>
+  
   <Config Name="Exports Path" Target="/app/Exports" Default="/mnt/user/appdata/music-manager-for-plex/exports" Mode="rw" Description="Map this to a folder on your Unraid array to save CSV exports." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/music-manager-for-plex/exports</Config>
+  
   <Config Name="Playlist Presets Path" Target="/app/Playlist_Presets" Default="/mnt/user/appdata/music-manager-for-plex/presets" Mode="rw" Description="Map this to save your Playlist Creator presets." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/music-manager-for-plex/presets</Config>
+  
+  <Config Name="Extras Path" Target="/app/Extras" Default="/mnt/user/appdata/music-manager-for-plex/extras" Mode="rw" Description="Map this to access the App Documentation and User Scripts (e.g. for User Scripts plugin)." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/music-manager-for-plex/extras</Config>
+
   <Config Name="Plex URL" Target="PLEX_URL" Default="" Mode="" Description="Your Plex Server URL (e.g., http://192.168.1.5:32400)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Plex Token" Target="PLEX_TOKEN" Default="" Mode="" Description="Your Plex Authentication Token" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="App Password" Target="APP_PASSWORD" Default="" Mode="" Description="Optional: Set a password to protect the WebUI." Type="Variable" Display="always" Required="false" Mask="true"/>
